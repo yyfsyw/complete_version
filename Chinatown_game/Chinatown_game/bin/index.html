@@ -238,8 +238,9 @@
                     </td>
                 </tr> 
                 
-                <tr><td class="label"> Results </td>
-                    <td> <input type="text" name="transportation" /> 
+                <tr><td class="label"> Result </td>
+                    <td> 
+                        <input type="text" name="transportation" /> 
                     </td>
                 </tr>
 
@@ -253,86 +254,22 @@
     </div>
     
     
-    
-    
-    <!--    Get Random number for choosing Game-->
 
-    <p id="text">There are three sections in this game, we have randomly choose click below</p>
-    <button id="myButton">Choose character</button>
+<!--   Play background music-->
+  <embed src="a.mp3" loop="true" autorun="true" hidden="true"></embed>
+   
+   
+<!--setup click to USER_INTERFACE.html   -->
+    <button id="myButton">USER INTERFACE</button>
     <script type= "text/javascript">
         
-        
-        
-//        问题所在处:可以得到address（addr here），但是不知道如何把它update进首页的  table里的path
-        // Get it (step-1.html) from the local storage
-        var selected = localStorage.getItem('selected');
-        if (selected!=null) {
-            
-            //<p id="demo"> This is a team </p>
-            
-            //document.getElementById("demo").innerHTML = selected;
-            
-            //update on form table
-
-            
-            //window.alert("It works!"+selected);            
-        }
-        
-        
-        
-        
-        document.getElementById("myButton").onclick = function(){
-        var minNumber = 1; // The minimum number you want
-        var maxNumber = 3; // The maximum number you want
-        var randomnumber = Math.floor(Math.random() * (maxNumber) + minNumber); 
-        
-        // Generates  random number
-        
-        var str = "The character you be selected is ";
-        //document.getElementById("text").innerHTML = randomnumber;
-            switch (randomnumber){
-                case 1:
-                    str = str + "STEPHANIE LU'S BIRTHDAY";
-                    //var result = str.link("https://www.baidu.com");
-                    //var result =
-                    //str.link(window.open("https://www.baidu.com",'_blank'));
-                    var result = str.link(window.open("step-1.html",'_blank'));
-                    //document.getElementById("text").innerHTML = str;
-                    document.getElementById("text").innerHTML = str.link("step-1.html");
-                    //window.open("https://www.baidu.com",'_blank');
-                    break;
-                    
-
-                case 2:
-                    str = str + "2";
-                    //var result = str.link("https://www.yahoo.com");
-                    var result = str.link(window.open("https://www.yahoo.com",'_blank'));
-                    document.getElementById("text").innerHTML = str;
-                    //window.open("https://www.yahoo.com",'_blank');
-                    break;
-
-                case 3:
-                    str = str + "3";
-                    //var result = str.link("https://www.google.com");
-                    var result = str.link(window.open("https://www.google.com",'_blank'));
-                    document.getElementById("text").innerHTML = str;
-                    //window.open("https://www.google.com",'_blank');
-                    break;                  
-            } 
-        }
-        
-        
-    </script>
     
-<!--   Play background music-->
-   <embed src="a.mp3" loop="true" autorun="true" hidden="true"></embed>
+        document.getElementById("myButton").onclick = function(){
+            window.open("user_interface.html",'_blank');    
+        }
    
    
-   
-   
-   
-   
-   
+    </script>
     
     
     

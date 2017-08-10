@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>  
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<title>Title</title>  
+
+
+
+<link rel="stylesheet" type="text/css" href="../CSS/ui.css" media="screen">
+
+</head>
+<body>
+    <!--    Get Random number for choosing Game-->
+
+    <p id="text">There are three sections in this game, we have randomly choose click below</p>
+    <button id="myButton">Choose character</button>
+    <script type= "text/javascript">
+        
+    
+        document.getElementById("myButton").onclick = function(){
+        var minNumber = 1; // The minimum number you want
+        var maxNumber = 3; // The maximum number you want
+        var randomnumber = Math.floor(Math.random() * (maxNumber) + minNumber); 
+        
+        // Generates  random number
+        
+        var str = "The character you be selected is ";
+        //document.getElementById("text").innerHTML = randomnumber;
+            switch (randomnumber){
+                case 1:
+                    str = str + "STEPHANIE LU'S BIRTHDAY";
+                    //var result = str.link("https://www.baidu.com");
+                    //var result =
+                    //str.link(window.open("https://www.baidu.com",'_blank'));
+                    var result = str.link(window.open("plot0-0.html",'_blank'));
+                    //document.getElementById("text").innerHTML = str;
+                    document.getElementById("text").innerHTML = str.link("plot0-0.html");
+                    //window.open("https://www.baidu.com",'_blank');
+                    break;
+                    
+
+                case 2:
+                    str = str + "2";
+                    //var result = str.link("https://www.yahoo.com");
+                    var result = str.link(window.open("https://www.yahoo.com",'_blank'));
+                    document.getElementById("text").innerHTML = str;
+                    //window.open("https://www.yahoo.com",'_blank');
+                    break;
+
+                case 3:
+                    str = str + "3";
+                    //var result = str.link("https://www.google.com");
+                    var result = str.link(window.open("https://www.google.com",'_blank'));
+                    document.getElementById("text").innerHTML = str;
+                    //window.open("https://www.google.com",'_blank');
+                    break;                  
+            } 
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
