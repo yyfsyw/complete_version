@@ -1,11 +1,12 @@
-# San_Francisco_culture_festival-game Waverly Adventure Game Proposal 
+# Waverly-Adventure-Project
+
 It is a HTML5 game and using local storage via javascript
- CURVATURE
- Waverly Adventure Game Proposal
+CURVATURE
+Waverly Adventure Game Proposal
 Prepared for: The Chinese Culture Centre of San Francisco Prepared by: Bo Fone ,Jun Chang Yeo and Yunfei Yang
 August 1, 2017
 Proposal number: 1
-  
+
 
 EXECUTIVE SUMMARY
 Objective
@@ -22,8 +23,8 @@ The game production will use Trello as pipeline management tool, textographo as 
 References
 Waverly Street View : Between Sacramento Street and Washington Street (Two Blocks). Sample Text-based Game
 Portals to Stephanie’s Story, Navin’s Story, and Elizabeth’s Story. 
-      
-  CURVATURE
+
+CURVATURE
 Game Visuals & Sound Requirements:
 • Background Music & Sound Effects
 • Dedicated Fonts and Complimentary Visuals for Each Story.
@@ -40,5 +41,3 @@ comeback to continue the story)
 • Player Reward (The amount and type of reward they get)
 • Total Interaction Results (The amount of hits at each of the endings at the close of the festival)
 • Total Reward Count (The amount of reward of each type we give out at the close of the festival)
- 
-  
