@@ -25,14 +25,22 @@
 body 
     {
     color: white;
-    background-color: #003;
-    font-family:Verdana,sans-serif;
-    font-size:200%;
+    background-color: #00bcd4;
+    font-family: 'Josefin Sans', Verdana, sans-serif;
+    font-weight: lighter;
+    src: url('../Fonts/JosefinSans-Light.ttf');
     margin: 0 auto;
-    
     }
 
+#text
+{
+    font-size: 96pt;
+}
 
+#myButton
+{
+    font-size: 36pt;
+}
 
 #horizon        
     {
@@ -105,3 +113,15 @@ a:hover
     color: red;
     text-decoration: none
     }
+
+#stage
+{
+    position: fixed;
+    top: 121px;
+    left: 215px;
+    height: 838px;
+    width: 1490px;
+    background-color: #00828e;
+    text-align: center;
+    padding-top: 100px;
+}

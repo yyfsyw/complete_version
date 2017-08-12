@@ -1,64 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>  
 <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
 <title>Title</title>  
 
 
-
+<link rel="stylesheet" href="../CSS/Lib/w3.css">
 <link rel="stylesheet" type="text/css" href="../CSS/ui.css" media="screen">
 
 </head>
 <body>
     <!--    Get Random number for choosing Game-->
-
-    <p id="text">There are three sections in this game, we have randomly choose click below</p>
-    <button id="myButton">Choose character</button>
-    <script type= "text/javascript">
+    <div id="stage">
+        <p id="text">Waverly Adventure</p>
+        <button class="w3-button w3-circle w3-red1 w3-card-2" id="myButton">Go</button>
+        <script type= "text/javascript">
         
     
-        document.getElementById("myButton").onclick = function(){
-        var minNumber = 1; // The minimum number you want
-        var maxNumber = 3; // The maximum number you want
-        var randomnumber = Math.floor(Math.random() * (maxNumber) + minNumber); 
+            document.getElementById("myButton").onclick = function(){
+                var minNumber = 1; // The minimum number you want
+                var maxNumber = 3; // The maximum number you want
+                var randomnumber = Math.floor(Math.random() * (maxNumber) + minNumber);
         
-        // Generates  random number
+            // Generates  random number
         
-        var str = "The character you be selected is ";
-        //document.getElementById("text").innerHTML = randomnumber;
-            switch (randomnumber){
-                case 1:
-                    str = str + "STEPHANIE LU'S BIRTHDAY";
-                    //var result = str.link("https://www.baidu.com");
-                    //var result =
-                    //str.link(window.open("https://www.baidu.com",'_blank'));
-                    var result = str.link(window.open("plot0-0.html",'_blank'));
-                    //document.getElementById("text").innerHTML = str;
-                    document.getElementById("text").innerHTML = str.link("plot0-0.html");
-                    //window.open("https://www.baidu.com",'_blank');
-                    break;
+            var str = "Your story is ";
+            //document.getElementById("text").innerHTML = randomnumber;
+                switch (randomnumber){
+                    case 1:
+                        str = str + "Unexpected.";
+                        //var result = str.link("https://www.baidu.com");
+                        //var result =
+                        //str.link(window.open("https://www.baidu.com",'_blank'));
+                        var result = str.link(window.open("plot0-0.html",'_blank'));
+                        //document.getElementById("text").innerHTML = str;
+                        document.getElementById("text").innerHTML = str.link("plot0-0.html");
+                        //window.open("https://www.baidu.com",'_blank');
+                        break;
                     
 
-                case 2:
-                    str = str + "NAVIN RAJ'S ADVENTURE";
-                    //var result = str.link("https://www.yahoo.com");
-                    var result = str.link(window.open("plot1.html",'_blank'));
-                    document.getElementById("text").innerHTML = str;
-                    //window.open("https://www.yahoo.com",'_blank');
-                    break;
+                    case 2:
+                        str = str + "Faith.";
+                        //var result = str.link("https://www.yahoo.com");
+                        var result = str.link(window.open("plot1.html",'_blank'));
+                        document.getElementById("text").innerHTML = str;
+                        //window.open("https://www.yahoo.com",'_blank');
+                        break;
 
-                case 3:
-                    str = str + "BETTY HARMON'S SCAVENGING";
-                    //var result = str.link("https://www.google.com");
-                    var result = str.link(window.open("plot2-0.html",'_blank'));
-                    document.getElementById("text").innerHTML = str;
-                    //window.open("https://www.google.com",'_blank');
-                    break;                  
-            } 
-        }
+                    case 3:
+                        str = str + "Recollect.";
+                        //var result = str.link("https://www.google.com");
+                        var result = str.link(window.open("plot2-0.html",'_blank'));
+                        document.getElementById("text").innerHTML = str;
+                        //window.open("https://www.google.com",'_blank');
+                        break;
+                }
+            }
         
         
-    </script>
+            </script>
+    </div>
     
 </body>
 </html>
