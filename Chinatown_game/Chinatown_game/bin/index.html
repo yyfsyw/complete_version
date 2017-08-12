@@ -3,14 +3,14 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- 
+<!--
     webSQL.html by Yunfei Yang
-    
+
     created 2017-08-02
 
-    Copyright (c) 2017 This file may be used for personal educational purposes as needed. 
+    Copyright (c) 2017 This file may be used for personal educational purposes as needed.
     Use for other purposes is granted provided that this notice is
-    retained and any changes made are clearly indicated as such. 
+    retained and any changes made are clearly indicated as such.
 -->
 
 <head>
@@ -18,9 +18,9 @@
         Player_List
     </title>
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-    
+
     <script language="javascript" src="../Javascript/bwH5LS.js"></script>
-    
+
     <script language="javascript">
         var db = prepareDatabase();
         var createSQL = 'CREATE TABLE IF NOT EXISTS tTravel (' +
@@ -47,7 +47,7 @@
                 dispError('Web SQL Not Supported');
                 return undefined;
             } else {
-                // Create the maximum space for Web 
+                // Create the maximum space for Web
                 var db = odb( 'testDatabase', '1.0', 'A Test Database', 10 * 1024 * 1024 );
                 db.transaction(function (t) {
                     t.executeSql( createSQL, [], function(){}, function(t, e) {
@@ -71,7 +71,7 @@
             });
         }
 
-        // Create the Edit and Delete buttons for a row 
+        // Create the Edit and Delete buttons for a row
         function rowButtons( id, traveler ) {
             return '<form><input type="button" value="Edit" onClick="javascript:editGo(' + id + ')"/>' +
                 '<input type="button" value="Delete" onClick="javascript:deleteGo(' + id + ', &quot;' + traveler + '&quot;)"/></form>';
@@ -114,7 +114,7 @@
             var key = f.elements['key'].value;
 
             switch(action) {
-            case 'add': 
+            case 'add':
                 if(! (traveler || destination || transportation)) break;
                 db.transaction( function(t) {
                     t.executeSql(' INSERT INTO tTravel ( traveler, destination, transportation ) VALUES ( ?, ?, ? ) ',
@@ -196,15 +196,15 @@
         window.onload = function() {
             initDisp();
         }
-        
-     
+
+
     </script>
-    
- 
-    
+
+
+
 <body>
     <!--Set Game start-->
-    
+
 <!--
     id top for go back to top
 
@@ -212,35 +212,35 @@
 
 <div id="content">
 
-    <h1> 
+    <h1>
         Waverly Adventure Game Player List
     </h1>
-   
-    
 
-    
+
+
+
 
     <div id="form">
         <!-- id top for go back to top-->
         <form id="PlayerForm" "top title_position">
             <table class="form">
-                              
+
                 <!-- Create three input blank areas-->
-                
+
                 <tr><td id='nameField' class="label"> Name </td>
-                    <td> <input type="text" name="traveler" /> 
+                    <td> <input type="text" name="traveler" />
                     </td>
                 </tr>
-                
+
                 <tr><td class="label"> Path </td>
-                    <td> 
-                        <input type="text" name="destination" />                       
+                    <td>
+                        <input type="text" name="destination" />
                     </td>
-                </tr> 
-                
+                </tr>
+
                 <tr><td class="label"> Result </td>
-                    <td> 
-                        <input type="text" name="transportation" /> 
+                    <td>
+                        <input type="text" name="transportation" />
                     </td>
                 </tr>
 
@@ -252,7 +252,7 @@
         <input id="inputKey" type="hidden" name="key" value="0" />
         </form>
     </div>
-    
+
   // the function which handles the input field logic
 
    function getUserName() {
@@ -267,26 +267,26 @@
             //alert(nameField);
         }
     }
-      
+
 
 <!--   Play background music-->
-  <embed src="a.mp3" loop="true" autorun="true" hidden="true"></embed>
-   
-   
+  <embed src="index.ogg" loop="true" autorun="true" hidden="true"></embed>
+
+
 <!--setup click to USER_INTERFACE.html   -->
     <button id="myButton">USER INTERFACE</button>
     <script type= "text/javascript">
-        
-    
+
+
         document.getElementById("myButton").onclick = function(){
-            window.open("user_interface.html",'_blank');    
+            window.open("user_interface.html",'_blank');
         }
-   
-   
+
+
     </script>
-    
-    
-    
+
+
+
     <p id="rcp" class="message">
         There are <span id="rowCount">_</span> Players in this game.
         <input type="button" value="Empty" onClick="javascript:clearDB()" />
@@ -296,8 +296,7 @@
     </div>
     <!--Back to Top-->
     <p><a href="#top">Back to top</a></p>
-    
+
 </div>
 </body>
 </html>
-
