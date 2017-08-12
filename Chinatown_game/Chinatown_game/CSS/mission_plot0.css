@@ -25,7 +25,7 @@
 body
 {
     color: white;
-    background-color: #66bb6a;
+    background-color: #ffd180;
     margin: auto;
     
 }
@@ -47,24 +47,24 @@ body
 
 #content
 {
-    font-family: 'Tillana', cursive; Verdana, sans-serif;
-    src: url('../Fonts/Tillana-Regular.ttf');
-    background-color: #2e7d32;
+    font-family: 'Indie Flower', cursive; Verdana, sans-serif;
+    src: url('../Fonts/IndieFlower.ttf');
+    background-color: #ffa726;
     position: fixed;
-    left: 278px;
-    width: 1364px;
-    height: 1080px;
-    -ms-transform: skewX(-10deg);
-    -webkit-transform: skewX(-10deg);
-    transform: skewX(-10deg);
+    top: 10px;
+    left: 460px;
+    /*
+     width: 250px;
+     height: 70px;
+     */
+    width: 1000px;
+    height: 1000px;
+    border-radius: 500px;
     visibility: visible
 }
 
 .bodytext
 {
-    -ms-transform: skewX(10deg);
-    -webkit-transform: skewX(10deg);
-    transform: skewX(10deg);
     font-size: 36pt;
     position: relative;
     padding: 80px;
@@ -72,11 +72,7 @@ body
 }
 
 
-p
-{
-    text-align: right;
-    padding-right: 50px;
-}
+
 
 .headline
 {
@@ -121,7 +117,7 @@ a:hover
 a:active
 {
     opacity: 0;
-    
+
 }
 
 u
